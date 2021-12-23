@@ -4,6 +4,7 @@ const path = require("path");
 
 module.exports = {
     mode: "production",
+    devtool: "source-map",
     entry: path.join(__dirname, "src", "index"),
     output: {
         path: path.join(__dirname, "dist"),
@@ -17,7 +18,7 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                use: "babel-core",
+                use: "babel-loader",
             },
         ],
     },
