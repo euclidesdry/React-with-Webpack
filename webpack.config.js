@@ -6,6 +6,7 @@ const webpack = require("webpack");
 module.exports = {
     mode: "production",
     devtool: "source-map",
+
     entry: [
         'react-hot-loader/patch',
         'webpack-dev-server/client?http://localhost:3000',
@@ -24,6 +25,10 @@ module.exports = {
         extensions: [".js", ".jsx"],
     },
     module: {
+        preLoaders: [{
+            test: /\.js$/,
+            use: "standard"
+        }],
         rules: [
             {
                 test: /\.js$/,
