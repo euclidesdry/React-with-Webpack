@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Title = () => <h1>Um título muito maroto!</h1>;
+const App = () => <h1>Aplication Started...</h1>;
 
-export default Title;
+export default App;
