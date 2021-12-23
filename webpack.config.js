@@ -1,12 +1,13 @@
-'use strict'
+"use strict";
 
-const path = require('path');
+const path = require("path");
 
-module.export = {
-    mode: 'none',
-    entry: path.join(__dirname, 'src', 'index'),
+module.exports = {
+    mode: "production",
+    entry: path.join(__dirname, "src", "index"),
     output: {
-        path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js'
-    }
-}
+        path: path.join(__dirname, "dist"),
+        filename: "bundle.js",
+        publicPath: "/static",
+    },
+};
