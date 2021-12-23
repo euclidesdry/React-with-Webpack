@@ -1,10 +1,7 @@
 'use strict';
-const React = require('react');
 
-const Title = React.createClass({
-    render: function() {
-        return React.createElement('h1', null, 'Hello, world!');
-    }
-})
+import React from 'react';
 
-module.exports = Title;
+const Title = () => <h1>Um título muito maroto!</h1>;
+
+export default Title;

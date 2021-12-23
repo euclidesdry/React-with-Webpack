@@ -10,4 +10,15 @@ module.exports = {
         filename: "bundle.js",
         publicPath: "/static",
     },
+    resolve: {
+        extensions: [".js", ".jsx"],
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: "babel-core",
+            },
+        ],
+    },
 };
