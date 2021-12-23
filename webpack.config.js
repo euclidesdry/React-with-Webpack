@@ -25,11 +25,11 @@ module.exports = {
         extensions: [".js", ".jsx"],
     },
     module: {
-        preLoaders: [{
-            test: /\.js$/,
-            use: "standard"
-        }],
         rules: [
+            {
+                test: /\.js$/,
+                use: "standard",
+            },
             {
                 test: /\.js$/,
                 use: "babel-loader",
